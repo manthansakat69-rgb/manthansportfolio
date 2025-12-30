@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resume</title>
+</head>
+<body>
+
+<style>
+    .container {
+      max-width: 800px;          
+      margin: 0px auto;         
+      padding: 20px;
+      background-color:#A47551;    }
+
+    .profile-container { 
+      display: flex;         
+      align-items: center;        
+      border: 1px solid #C4B6A6;
+      padding: 20px;
+      border-radius: 8px;
+      background-color: #1C1C1C;
+   border: 8px solid #C4B6A6;     }
+
+    .profile-photo {
+      flex: 0 0 150px;            
+      margin-right: 20px;
+    }
+
+    .profile-photo img {
+      width: 100%;
+      border-radius: 50%;  
+ border: 5px solid #C4B6A6;        
+    }
+
+    .profile-details {
+      flex: 1;                    /* take remaining space */
+    }
+
+    .profile-details h2 {
+      margin: 0;
+color:white;}
+
+    .profile-details p {
+      margin: 5px 0;
+      color: ##4A90E2;     }
+social-links {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+    }
+
+    body {
+      background: #1C1C1C;
+      color: #F7E8D3;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 40px;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .social-links a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: #121826;
+      border: 1px solid #00FFA3;
+      box-shadow: 0 0 10px rgba(0, 255, 163, 0.25);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    }
+
+    .social-links a:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 14px rgba(0, 209, 255, 0.5);
+      border-color: #00D1FF;
+    }
+
+    .social-links svg {
+      width: 22px;
+      height: 22px;
+      fill: none;
+      stroke: #00D1FF; /* neon blue */
+      stroke-width: 1.8;
+    }
+
+    .social-links a.instagram svg {
+      stroke: none;
+      fill: url(#instaGradient);
+    }
+
+    /* Optional label style if you want text next to icons */
+    .social-labels {
+      display: flex;
+      gap: 16px;
+      margin-top: 8px;
+      color: #B0BEC5;
+      font-size: 0.9rem;
+    }
+
+    /* Optional label style if you want text next to icons */
+    .social-labels {
+      display: flex;
+      gap: 16px;
+      margin-top: 8px;
+      color: #B0BEC5;
+      font-size: 0.9rem;
+
+    }
+
+
+container {
+            display: flex;          /* Places divs side by side */
+            gap: 50px;              /* Space between containers */
+        }
+        .box {
+            flex: 1;                /* Equal width for both boxes */
+            background-color: #f0f0f0;
+            border: 2px solid #333;
+            text-align: center;
+        }
+
+.video-row {
+      display: flex;              /* Arrange in a row */
+      justify-content: space-around; /* Space between videos */
+      align-items: center;
+    }
+    video {
+      width: 30%;   /* Each video takes 30% of the row */
+      border: 2px solid #3498db;  /* Optional styling */
+      border-radius: 8px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="profile-container">
+      <div class="profile-photo">
+        <img src="mani2.jpg" alt="Your Photo">
+      </div>
+      <div class="profile-details">
+        <h2>Manthan Sakat </h2>
+        <p>Fresher</p>
+        <p>Email:manthansakat69@gmail.com</p>
+        <p>Location: Pune, India</p>
+<div class="social-links">
+    <!-- Instagram -->
+    <a class="instagram" href="https://www.instagram.com/whos.mnthn/" target="_blank" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <defs>
+          <linearGradient id="instaGradient" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#F58529"/>
+            <stop offset="30%" stop-color="#DD2A7B"/>
+            <stop offset="60%" stop-color="#8134AF"/>
+            <stop offset="100%" stop-color="#515BD4"/>
+          </linearGradient>
+        </defs>
+        <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5z" />
+        <circle cx="12" cy="12" r="3.5" fill="#fff"/>
+        <circle cx="17.5" cy="6.5" r="1.5" fill="#fff"/>
+      </svg>
+    </a>
+
+    <!-- GitHub -->
+    <a class="github" href="https://github.com/manthansakat69-rgb" target="_blank" aria-label="GitHub">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.5 2.87 8.31 6.85 9.66.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.7-2.79.62-3.38-1.37-3.38-1.37-.46-1.2-1.13-1.52-1.13-1.52-.92-.64.07-.63.07-.63 1.02.07 1.56 1.08 1.56 1.08 .9 1.58 2.36 1.12 2.94 .86 .09-.67 .35-1.12 .63-1.38 -2.23-.26 -4.58-1.15 -4.58-5.13 0 -1.13 .39-2.05 1.03-2.77 -.1-.26 -.45-1.32 .1-2.75 0 0 .85-.28 2.79 1.06 .81-.23 1.68-.35 2.55-.35 .87 0 1.74 .12 2.55 .35 1.94-1.34 2.79-1.06 2.79-1.06 .55 1.43 .2 2.49 .1 2.75 .64 .72 1.03 1.64 1.03 2.77 0 4-2.36 4.86 -4.6 5.12 .36 .32 .67 .95 .67 1.92 0 .77 -.01 1.39 -.01 1.58 0 .28 .18 .6 .69 .49 C19.13 20.56 22 16.75 22 12.25 22 6.58 17.52 2 12 2z"/>
+      </svg>
+    </a>
+
+    <!-- X (Twitter) -->
+    <a class="x" href="https://x.com/Manthansakat" target="_blank" aria-label="X">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M18.9 2H21l-6.56 7.5L22 22h-6.9l-4.6-6.43L4.5 22H3l7.02-8.04L2 2h6.9l4.18 5.85L18.9 2z"/>
+      </svg>
+    </a>
+  </div>
+
+
+      </div>
+    </div>
+  </div>
+  <div class="container">
+
+    
+    <header>
+      <div>
+        <div class="name">Manthan Sakat</div>
+        <div class="title">First-Year B.Tech Student•Pune,Maharashtra</div>
+        <div class="tags">
+          <span class="tag">Open to internships</span>
+          <span class="tag">Actively learning</span>
+          <span class="tag">Team player</span>
+        </div>
+      </div>
+      <div class="contact" aria-label="Contact information">
+        <span>Email: <a href="mailto:manthansakat69@gmail.com">manthansakat69@gmail.com</a></span>
+        <span>Phone: +91-98XXXXXXXX</span>
+                <span>Address: Pune, MH, India</span>
+      </div>
+    </header>
+    <main>
+       <section>    
+    
+          <h2>Objective</h2>
+ <p>  Motivated first-year B.Tech student seeking opportunities to apply foundational engineering and programming skills to real-world projects.
+Eager to learn, collaborate, and contribute to entry-level internships, hackathons, or campus initiatives.</p>
+
+        
+          <h2>Education</h2>
+          <h3>B.Tech in Computer Engineering</h3>
+         <p>Zeal College of Engineering and Research Narhe, Pune • <br>         
+Relevant coursework: Programming Fundamentals, Engineering Mathematics I, Basics of Electronics, Data Structures (ongoing).</p>
+         <ul class="list">
+            <li>
+              <strong>CGPA/Percentage:</strong> First-year in progress
+          Semester I result pending
+            </li>
+            <li>
+              <strong>12th (HSC):</strong> [Maharashtra Board], [2025] — [64%]
+             PCM form-annasaheb vartak college [ Vasai west ]
+            </li>
+            <li>
+              <strong>10th (SSC):</strong> [Maharashtra Board], [2023] — [86%]
+              form-st anthony high school [nalasopara east]
+            </li>
+          </ul>
+   
+
+      
+      
+          <h2>Projects</h2>
+  <h3>Wordpress</h3>
+<div class="container">
+        <div class="box">s
+
+          <p style="color:BLack;">Project 1</p>
+<a href="https://mangaandanime.netlify.app/">
+
+  <img src="blog.jpg" alt="Project1" height="300px" width="720px">
+</a>
+        </div>
+        <div class="box">
+                  <p style="color:BLack;">Project 2</p>
+<a href="https://24x7online.netlify.app/">
+ <img src="e commerce.jpg" alt="Project2" height="300px" width="720px">
+</a>
+        </div>
+    </div>
+
+
+ <h2>My Canva Project</h2>
+  
+  <div class="video-row">
+     
+ <video controls>
+      <source src="Yellow Orange Traditional Ganesh Chaturthi Invitation.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <video controls>
+      <source src="Cream and Pink Floral Wedding Invitation Mobile Video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+          <h2>Certifications</h2>
+          <ul>
+            <li><span><strong> Certifications:</strong> 6 Month Crouse of wordpress expert by- [NCT Virar]</li>
+            <li><span><strong>Certifications:</strong> Completed Prompt Engg Crouse from Simplelearn-by-skillup</li>
+            <li><span><strong>Certifications:</strong> Completed Python basic Crouse from Simplelearn-by-skillup</li>
+          </ul>
+        
+
+          <h2>Skills</h2>
+          <h3>Programming</h3>
+          <div>
+<ul>
+           <li> C </li>
+     <li> Python(basic)</li>
+            <li>HTML</li>
+            <li>CSS</li>
+           </ul>
+          </div>
+
+ <h3>Tools</h3>
+          <div>
+<ul>
+           <li>VS code</li>
+     <li> Canva </li>
+            <li>Lightroom</li>
+            <li>Capcut/Vn app</li>
+           </ul>
+          </div>
+
+        
+          <h2>Extracurricular activities</h2>
+          <ul>
+             <li><strong>Sports:</strong>1st in distirct table tennis touranament 2024–2025</li>
+            <li><strong>Sports:</strong>6th in state carrom touranament 2024–2025</li>
+  <li><strong>Sports:</strong>1st in Nct canva poster making  2024–2025</li> 
+</ul>
+       
+                  <h2>Interests</h2>
+          <ul>
+             <li>Web development</li>
+            <li>Competitive programming</li>
+  <li>Cyber security</li> 
+</ul>
+       
+    </main>
+
+  </div>
+</body>
+</html>
+
